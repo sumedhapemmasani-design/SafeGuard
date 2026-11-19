@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>SiteGuard Pro - Enterprise Construction Safety Cloud & AI Copilot</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+</head>
+<body>
+
+  <div class="app-container">
+
+    <!-- ================= LEFT PROFESSIONAL ENTERPRISE SIDEBAR ================= -->
+    <aside class="app-sidebar" id="app-sidebar" role="navigation" aria-label="Main Navigation">
+      
+      <!-- Brand Header -->
+      <div class="sidebar-header">
+        <div class="brand-wrapper">
+          <div class="brand-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <div class="brand-title">
+              SiteGuard
+              <span class="brand-edition">Enterprise</span>
+            </div>
+          </div>
+        </div>
+        <button class="btn-sidebar-collapse" id="btn-sidebar-close" aria-label="Close Sidebar" title="Collapse Sidebar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <!-- Active Project Switcher -->
+      <div class="sidebar-project-select" id="sidebar-project-box" title="Switch Construction Project">
+        <div class="project-details">
+          <h4>Project Apex Tower</h4>
+          <span>Phase 3: Superstructure</span>
+        </div>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </div>
+
+      <!-- Main Navigation Menu -->
+      <nav class="sidebar-nav">
+        
+        <div class="nav-section-title">Core Operations</div>
+
+        <!-- 1. Dashboard -->
+        <a href="javascript:void(0)" class="sidebar-nav-item active" data-view="dashboard">
+          <div class="sidebar-nav-left">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            <span>Dashboard</span>
+          </div>
+        </a>
+
+        <!-- 2. Site Map -->
+        <a href="javascript:void(0)" class="sidebar-nav-item" data-view="map">
+          <div class="sidebar-nav-left">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line></svg>
+            <span>Site Blueprint & Zones</span>
+          </div>
+          <span class="sidebar-badge" style="background: var(--bg-surface); color: var(--text-muted);" id="side-count-zones">6</span>
+        </a>
+
+        <!-- 3. Hazards -->
+        <a href="javascript:void(0)" class="sidebar-nav-item" data-view="hazards">
+          <div class="sidebar-nav-left">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            <span>Hazard Log</span>
+          </div>
+          <span class="sidebar-badge alert" id="side-count-hazards">12</span>
+        </a>
+
+        <!-- 4. Inspections -->
+        <a href="javascript:void(0)" class="sidebar-nav-item" data-view="inspections">
+          <div class="sidebar-nav-left">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+            <span>Safety Inspections</span>
+          </div>
+          <span class="sidebar-badge warning" id="side-count-inspections">2 Due</span>
+        </a>
+
+        <!-- 5. Corrective Actions -->
+        <a href="javascript:void(0)" class="sidebar-nav-item" data-view="corrective">
+          <div class="sidebar-nav-left">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+            <span>Corrective Actions</span>
+          </div>
+          <span class="sidebar-badge alert" id="side-count-actions">1 Overdue</span>
+        </a>
+
+        <div class="nav-section-title" style="margin-top: 12px;">Intelligence & Reports</div>
+
+        <!-- 6. Analytics -->
+        <a href="javascript:void(0)" class="sidebar-nav-item" data-view="analytics">
+          <div class="sidebar-nav-left">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+            <span>Safety Analytics</span>
+          </div>
+          <span class="sidebar-badge" style="background: rgba(37, 99, 235, 0.2); color: var(--brand-cyan);">PRO</span>
+        </a>
+
+        <!-- 7. AI Copilot Insights -->
+        <a href="javascript:void(0)" class="sidebar-nav-item" data-view="ai-insights">
+          <div class="sidebar-nav-left">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path></svg>
+            <span>AI Safety Copilot</span>
+          </div>
+          <span class="sidebar-badge ai">AI</span>
+        </a>
+
+        <!-- 8. Settings -->
+        <a href="javascript:void(0)" class="sidebar-nav-item" data-view="settings">
+          <div class="sidebar-nav-left">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            <span>Site Settings</span>
+          </div>
+        </a>
+
+      </nav>
+
+      <!-- Sidebar AI Predictive Status Card -->
+      <div class="sidebar-ai-card">
+        <div class="sidebar-ai-header">
+          <span class="ai-status-pill">
+            <span class="ai-pulse-dot"></span>
+            AI Copilot Active
+          </span>
+          <span style="font-size: 10px; color: var(--text-muted); font-family: var(--font-mono);">v2.4</span>
+        </div>
+        <p>Analyzing leading indicators: High risk clustered in Zone B hoisting path.</p>
+        <button class="btn-sidebar-ai" id="btn-sidebar-ai-quick">
+          <span>⚡ View 4 Predictive Insights</span>
+        </button>
+      </div>
+
+      <!-- User Profile Footer -->
+      <div class="sidebar-user-footer">
+        <div class="user-profile-info">
+          <div class="user-avatar">MV</div>
+          <div class="user-name-title">
+            <h5>Marcus Vance</h5>
+            <span>Chief Safety Officer</span>
+          </div>
+        </div>
+        <button class="btn-sidebar-collapse" id="btn-quick-theme-side" title="Toggle Theme">☀️</button>
+      </div>
+
+    </aside>
+
+    <!-- ================= MAIN VIEWPORT ================= -->
+    <div class="main-viewport">
+      
+      <!-- Top Navbar -->
+      <header class="top-navbar" role="banner">
+        
+        <div class="topbar-left">
+          <button class="btn-mobile-menu" id="btn-mobile-menu" aria-label="Open Navigation">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+          
+          <div class="breadcrumbs-wrap">
+            <span>Apex Tower</span>
+            <span>/</span>
+            <strong id="topbar-current-page">Dashboard</strong>
+          </div>
+        </div>
+
+        <div class="topbar-center">
+          <div class="site-status-chip">
+            <span style="color: var(--brand-cyan);">☀️ 72°F Clear</span>
+            <span>&bull;</span>
+            <span class="wind-indicator">💨 Wind: <strong>14 mph</strong> (Max 32)</span>
+            <span>&bull;</span>
+            <span style="color: var(--success-green); font-weight: 700;">Crane #1: OPERATIONAL</span>
+          </div>
+        </div>
+
+        <div class="topbar-right">
+          <!-- AI Copilot Status Button -->
+          <button class="btn-secondary" id="top-btn-ai" style="border-color: rgba(139, 92, 246, 0.4); color: var(--ai-purple-light);">
+            <span>✨</span>
+            <span style="font-weight: 700;">AI Copilot (Simulated)</span>
+          </button>
+
+          <!-- Daily Toolbox Talk Button -->
+          <button class="btn-secondary" id="btn-top-digest" title="Export Daily Toolbox Briefing">
+            <span>📋</span>
+            <span>Daily Digest</span>
+          </button>
+
+          <!-- Audio Feedback Toggle -->
+          <button class="btn-top-action" id="btn-sound-toggle" title="Toggle Safety Sound Alerts">
+            🔔
+          </button>
+
+          <!-- Theme Toggle -->
+          <button class="btn-top-action" id="btn-theme-toggle" title="Toggle High-Contrast / Daylight Mode">
+            ☀️
+          </button>
+
+          <!-- Reset Sample Data -->
+          <button class="btn-top-action" id="btn-reset-data" title="Reset Demo Data">
+            🔄
+          </button>
+
+          <!-- Prominent Primary Action -->
+          <button class="btn-report-primary" id="btn-top-report">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            <span>Report Hazard</span>
+          </button>
+        </div>
+
+      </header>
+
+      <!-- Urgent Site Broadcast Ticker -->
+      <div class="urgent-site-ticker" role="region" aria-label="Urgent Broadcast">
+        <div>
+          <span class="ticker-label">URGENT HAZARD</span>
+          <span style="color: #fca5a5; font-weight: 600;" id="ticker-broadcast-text">
+            CRITICAL: Zone B Tower Crane 8th-floor perimeter cable unhooked during hoist. Remediating under SLA #CA-081.
+          </span>
+        </div>
+        <div style="color: var(--text-muted); font-size: 11px;">
+          Site Paramedic: <strong style="color: var(--brand-cyan);">(555) 019-2834</strong> &bull; Channel: <strong>Ch 4</strong>
+        </div>
+      </div>
+
+      <!-- Main Workspace -->
+      <main class="main-content-area" role="main">
+
+        <!-- ================= 1. VIEW: DASHBOARD ================= -->
+        <section id="view-dashboard" class="view-section active">
+          
+          <div class="page-header-row">
+            <div class="page-title-group">
+              <h2>Executive Safety Dashboard</h2>
+              <p>Real-time OSHA compliance, leading indicators, and active remediation workflows</p>
+            </div>
+            <div class="page-action-group">
+              <button class="btn-secondary" id="dash-btn-digest">📄 Print Toolbox Talk</button>
+              <button class="btn-report-primary" id="dash-btn-report">+ Report Hazard</button>
+            </div>
+          </div>
+
+          <!-- KPI Cards Grid -->
+          <div class="kpi-row-grid">
+            
+            <!-- Open Hazards Card -->
+            <div class="stat-card" id="dash-kpi-hazards" title="View Hazard Log">
+              <div class="stat-card-header">
+                <span class="stat-card-title">Open Hazards</span>
+                <div class="stat-icon-box red">⚠️</div>
+              </div>
+              <div class="stat-number-row">
+                <span class="stat-value" id="kpi-val-open-hazards">9</span>
+                <span class="stat-trend-chip danger" id="kpi-badge-critical">3 Critical</span>
+              </div>
+              <div class="stat-subtext" id="kpi-sub-hazards">4 High &bull; 2 Medium &bull; 0 Low</div>
+            </div>
+
+            <!-- Overdue Actions Card -->
+            <div class="stat-card" id="dash-kpi-actions" title="View Corrective Actions">
+              <div class="stat-card-header">
+                <span class="stat-card-title">Overdue Actions</span>
+                <div class="stat-icon-box orange">⏱️</div>
+              </div>
+              <div class="stat-number-row">
+                <span class="stat-value" id="kpi-val-overdue-actions">1</span>
+                <span class="stat-trend-chip warning">SLA Breached</span>
+              </div>
+              <div class="stat-subtext">5 Active remediation tasks in progress</div>
+            </div>
+
+            <!-- Inspections Due Card -->
+            <div class="stat-card" id="dash-kpi-inspections" title="Run Audits">
+              <div class="stat-card-header">
+                <span class="stat-card-title">Inspections Due</span>
+                <div class="stat-icon-box blue">📋</div>
+              </div>
+              <div class="stat-number-row">
+                <span class="stat-value" id="kpi-val-inspections-due">2</span>
+                <span class="stat-trend-chip warning">Due Today</span>
+              </div>
+              <div class="stat-subtext">1 In Progress &bull; 2 Completed Shifts</div>
+            </div>
+
+            <!-- Incident-Free Days Card -->
+            <div class="stat-card" id="dash-kpi-incidents">
+              <div class="stat-card-header">
+                <span class="stat-card-title">Zero-Injury Record</span>
+                <div class="stat-icon-box green">🛡️</div>
+              </div>
+              <div class="stat-number-row">
+                <span class="stat-value">84</span>
+                <span class="stat-trend-chip success">Zero LTI</span>
+              </div>
+              <div class="stat-subtext">84 consecutive safe work days (0.00 LTIFR)</div>
+            </div>
+
+          </div>
+
+          <!-- Interactive Dashboard Charts Row -->
+          <div class="dashboard-charts-grid">
+            
+            <!-- Left Chart: Weekly Incident & Hazard Trend (Interactive SVG Line Chart) -->
+            <div class="chart-panel-card">
+              <div class="panel-title-bar">
+                <h3>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                  <span>Weekly Hazard Velocity & Resolution Trend</span>
+                </h3>
+                <span style="font-size: 11px; color: var(--text-muted);">Last 7 Days Activity</span>
+              </div>
+
+              <!-- SVG Line Chart Rendered via JS -->
+              <div id="chart-weekly-trend-container"></div>
+
+              <div class="chart-legend-row">
+                <div class="legend-item">
+                  <span class="legend-color-dot" style="background: var(--danger-red);"></span>
+                  <span>Reported Hazards</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-color-dot" style="background: var(--success-green);"></span>
+                  <span>Resolved Actions</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-color-dot" style="background: var(--brand-cyan);"></span>
+                  <span>Completed Audits</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Chart: Category Distribution (Interactive SVG Donut Chart) -->
+            <div class="chart-panel-card">
+              <div class="panel-title-bar">
+                <h3>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a10 10 0 0 1 10 10h-10z"></path></svg>
+                  <span>Hazards by OSHA Category</span>
+                </h3>
+                <span style="font-size: 11px; color: var(--text-muted);">Active Breakdown</span>
+              </div>
+
+              <div class="donut-chart-container">
+                <div class="donut-svg-wrapper" id="chart-donut-container">
+                  <!-- Rendered via JS -->
+                </div>
+                <div class="donut-legend-list" id="chart-donut-legend">
+                  <!-- Rendered via JS -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- AI Predictive Copilot Highlight Banner on Dashboard -->
+          <div class="ai-copilot-banner">
+            <div class="ai-banner-content">
+              <h3>
+                <span>✨ SiteGuard AI Predictive Copilot</span>
+                <span class="simulated-pill">Simulated Predictive Intelligence</span>
+              </h3>
+              <p id="dash-ai-highlight-text">
+                <strong>Zone B (Tower Crane & Steel)</strong> risk score elevated to <strong>86/100</strong>. Clustered rigging deficiencies combined with 18 mph wind gusts indicate 41% heightened near-miss probability.
+              </p>
+            </div>
+            <button class="btn-ai-action" id="dash-btn-ai-explore">
+              <span>Inspect AI Insights &rarr;</span>
+            </button>
+          </div>
+
+          <!-- Split Row: Blueprint Preview & Urgent Actions Queue -->
+          <div class="dashboard-charts-grid" style="grid-template-columns: 1.4fr 1.6fr;">
+            
+            <!-- Left: Blueprint Mini Preview -->
+            <div class="chart-panel-card">
+              <div class="panel-title-bar">
+                <h3>
+                  <span>🗺️</span>
+                  <span>Site Zones Risk Overview</span>
+                </h3>
+                <button class="btn-secondary" style="font-size: 11px; padding: 4px 10px; min-height: 28px;" id="dash-btn-fullmap">Full Blueprint &rarr;</button>
+              </div>
+
+              <div id="dashboard-mini-map-box" class="blueprint-canvas-box" style="height: 260px;">
+                <!-- Mini SVG Map rendered via JS -->
+              </div>
+
+              <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 14px;" id="dash-zones-pills-row">
+                <!-- Zone Risk Pills rendered via JS -->
+              </div>
+            </div>
+
+            <!-- Right: Urgent Corrective Actions Queue -->
+            <div class="chart-panel-card">
+              <div class="panel-title-bar">
+                <h3>
+                  <span>🚨</span>
+                  <span>Immediate SLA Action Queue</span>
+                </h3>
+                <button class="btn-secondary" style="font-size: 11px; padding: 4px 10px; min-height: 28px;" id="dash-btn-allactions">Kanban Board &rarr;</button>
+              </div>
+
+              <div id="dash-urgent-actions-list" style="display: flex; flex-direction: column; gap: 10px; overflow-y: auto; max-height: 340px;">
+                <!-- Rendered via JS -->
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- ================= 2. VIEW: SITE MAP & ZONES ================= -->
+        <section id="view-map" class="view-section">
+          
+          <div class="page-header-row">
+            <div class="page-title-group">
+              <h2>Interactive Site Blueprint & Risk Heatmap</h2>
+              <p>Spatial awareness of active hazards, crane swing zones, and mandatory PPE per sector</p>
+            </div>
+            <div class="page-action-group">
+              <div class="filter-selectors-group">
+                <button class="btn-secondary active" id="btn-toggle-mapview">🗺️ Blueprint View</button>
+                <button class="btn-secondary" id="btn-toggle-listview">📋 Zone Directory</button>
+              </div>
+              <button class="btn-report-primary" id="map-btn-report">+ Report Hazard</button>
+            </div>
+          </div>
+
+          <div class="map-view-layout">
+            
+            <!-- Main Blueprint Canvas -->
+            <div class="blueprint-canvas-box">
+              <div class="map-tools-toolbar">
+                <button class="btn-map-tool" id="map-tool-zoomin" title="Zoom In">+</button>
+                <button class="btn-map-tool" id="map-tool-zoomout" title="Zoom Out">-</button>
+                <button class="btn-map-tool" id="map-tool-reset" title="Reset View">Reset</button>
+              </div>
+              
+              <div id="main-site-map-container">
+                <!-- Full SVG Blueprint Rendered by JS -->
+              </div>
+
+              <!-- Map Legend Bar -->
+              <div style="padding: 12px 18px; background: rgba(11, 19, 37, 0.9); border-top: 1px solid var(--border-medium); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: 12px;">
+                <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap;">
+                  <span style="display: flex; align-items: center; gap: 6px;"><span style="width: 10px; height: 10px; background: var(--danger-red); border-radius: 2px;"></span> Critical Risk Zone</span>
+                  <span style="display: flex; align-items: center; gap: 6px;"><span style="width: 10px; height: 10px; background: var(--safety-orange); border-radius: 2px;"></span> High Risk Zone</span>
+                  <span style="display: flex; align-items: center; gap: 6px;"><span style="width: 10px; height: 10px; background: var(--safety-yellow); border-radius: 2px;"></span> Medium Risk Zone</span>
+                  <span style="display: flex; align-items: center; gap: 6px;"><span style="width: 10px; height: 10px; background: var(--success-green); border-radius: 2px;"></span> Low Risk Zone</span>
+                </div>
+                <span style="color: var(--text-muted);">Click any Zone or Hazard Pin to inspect details</span>
+              </div>
+            </div>
+
+            <!-- Zone Inspector Side Panel -->
+            <div class="zone-inspector-panel" id="zone-inspector-panel">
+              <!-- Rendered via JS based on selected zone -->
+            </div>
+
+          </div>
+
+          <!-- Structured Zone Directory Grid (Hidden when blueprint active) -->
+          <div class="hazards-cards-grid" id="zones-list-container" style="display: none; margin-top: 20px;">
+            <!-- Rendered via JS -->
+          </div>
+
+        </section>
+
+        <!-- ================= 3. VIEW: HAZARD LOG ================= -->
+        <section id="view-hazards" class="view-section">
+          
+          <div class="page-header-row">
+            <div class="page-title-group">
+              <h2>Construction Hazard Log</h2>
+              <p>Comprehensive tracking of safety observations, OSHA violations, and resolution lifecycles</p>
+            </div>
+            <div class="page-action-group">
+              <button class="btn-secondary" id="btn-export-hazards-csv">📥 Export CSV</button>
+              <button class="btn-report-primary" id="btn-open-report-from-hazards">+ Report Hazard</button>
+            </div>
+          </div>
+
+          <!-- Search & Multi-Facet Filters -->
+          <div class="filter-action-bar">
+            <div class="search-field-box">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <input type="text" id="hazard-search" class="form-search-input" placeholder="Search hazards by title, location, subcontractor, or ID...">
+            </div>
+
+            <div class="filter-selectors-group">
+              <!-- Zone Filter -->
+              <select id="filter-zone" class="select-filter">
+                <option value="all">All Site Zones</option>
+                <option value="ZONE-A">Zone A - Excavation</option>
+                <option value="ZONE-B">Zone B - Crane & Steel</option>
+                <option value="ZONE-C">Zone C - Interior & MEP</option>
+                <option value="ZONE-D">Zone D - Scaffolding</option>
+                <option value="ZONE-E">Zone E - Laydown Yard</option>
+                <option value="ZONE-F">Zone F - Gate & Offices</option>
+              </select>
+
+              <!-- Severity Filter -->
+              <select id="filter-severity" class="select-filter">
+                <option value="all">All Severities</option>
+                <option value="Critical">Critical (Stop Work)</option>
+                <option value="High">High (Urgent)</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+              </select>
+
+              <!-- Category Filter -->
+              <select id="filter-category" class="select-filter">
+                <option value="all">All Categories</option>
+                <option value="Fall Protection">Fall Protection</option>
+                <option value="Electrical">Electrical</option>
+                <option value="Scaffolding">Scaffolding</option>
+                <option value="Trenching">Trenching</option>
+                <option value="Heavy Equipment">Heavy Equipment</option>
+                <option value="Chemical/Hazmat">Chemical/Hazmat</option>
+                <option value="PPE">PPE Compliance</option>
+                <option value="Housekeeping">Housekeeping</option>
+              </select>
+
+              <!-- Status Filter -->
+              <select id="filter-status" class="select-filter">
+                <option value="all">All Statuses</option>
+                <option value="Open">Open</option>
+                <option value="Assigned">Assigned</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Resolved">Resolved</option>
+              </select>
+
+              <!-- Layout Toggles -->
+              <div class="filter-selectors-group">
+                <button class="btn-secondary active" id="btn-hazards-cardview" title="Card View">🗂️ Cards</button>
+                <button class="btn-secondary" id="btn-hazards-tableview" title="Table View">📑 Table</button>
+              </div>
+
+              <button id="btn-clear-hazard-filters" class="btn-secondary" title="Clear Filters">✕ Reset</button>
+            </div>
+          </div>
+
+          <!-- Hazards Grid Container -->
+          <div id="hazards-cards-view" class="hazards-cards-grid">
+            <!-- Rendered via JS -->
+          </div>
+
+          <!-- Hazards Table Container (Hidden by default) -->
+          <div id="hazards-table-view" class="table-wrapper-responsive" style="display: none;">
+            <table class="enterprise-table">
+              <thead>
+                <tr>
+                  <th>Severity</th>
+                  <th>Hazard ID & Title</th>
+                  <th>Category</th>
+                  <th>Location & Zone</th>
+                  <th>Assigned Contractor</th>
+                  <th>SLA Deadline</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="hazards-table-body">
+                <!-- Rendered via JS -->
+              </tbody>
+            </table>
+          </div>
+
+        </section>
+
+        <!-- ================= 4. VIEW: INSPECTIONS & CHECKLIST RUNNER ================= -->
+        <section id="view-inspections" class="view-section">
+          
+          <div class="page-header-row">
+            <div class="page-title-group">
+              <h2>Site Safety Inspections & Audits</h2>
+              <p>OSHA-standard checklists with Pass / Fail evaluation, auto-flagging, and digital supervisor sign-off</p>
+            </div>
+            <div class="page-action-group">
+              <button class="btn-report-primary" id="btn-start-new-audit">➕ New Inspection Walk</button>
+            </div>
+          </div>
+
+          <div class="inspections-split-view">
+            
+            <!-- Left: Audits List -->
+            <div>
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                <h3 style="font-size: 14px; font-weight: 800; color: var(--text-primary);">Audit Schedule & History</h3>
+                <div class="filter-selectors-group">
+                  <button class="btn-secondary active" id="filter-audit-all" style="min-height: 30px; font-size: 11px;">All</button>
+                  <button class="btn-secondary" id="filter-audit-due" style="min-height: 30px; font-size: 11px;">Due</button>
+                  <button class="btn-secondary" id="filter-audit-done" style="min-height: 30px; font-size: 11px;">Completed</button>
+                </div>
+              </div>
+
+              <div id="inspections-list-container">
+                <!-- Rendered via JS -->
+              </div>
+            </div>
+
+            <!-- Right: Interactive Checklist Runner -->
+            <div class="checklist-runner-card" id="inspection-runner-container">
+              <!-- Rendered via JS -->
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- ================= 5. VIEW: CORRECTIVE ACTIONS (KANBAN) ================= -->
+        <section id="view-corrective" class="view-section">
+          
+          <div class="page-header-row">
+            <div class="page-title-group">
+              <h2>Corrective Action Management System</h2>
+              <p>Lifecycle Pipeline: <strong>Open &rarr; Assigned &rarr; In Progress &rarr; Resolved</strong></p>
+            </div>
+            <div class="page-action-group">
+              <div class="filter-selectors-group">
+                <button class="btn-secondary active" id="btn-ca-kanban">📊 Kanban Board</button>
+                <button class="btn-secondary" id="btn-ca-table">📑 List View</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4-Column Kanban Board -->
+          <div id="ca-kanban-container" class="kanban-grid-4col">
+            
+            <!-- Column 1: Open -->
+            <div class="kanban-stage-column col-open">
+              <div class="kanban-stage-header">
+                <h4><span>⚠️</span> Open (<span id="count-col-open">0</span>)</h4>
+                <span class="status-pill open">Unassigned</span>
+              </div>
+              <div class="kanban-card-deck" id="kanban-list-open"></div>
+            </div>
+
+            <!-- Column 2: Assigned -->
+            <div class="kanban-stage-column col-assigned">
+              <div class="kanban-stage-header">
+                <h4><span>👷</span> Assigned (<span id="count-col-assigned">0</span>)</h4>
+                <span class="status-pill assigned">Dispatched</span>
+              </div>
+              <div class="kanban-card-deck" id="kanban-list-assigned"></div>
+            </div>
+
+            <!-- Column 3: In Progress -->
+            <div class="kanban-stage-column col-in-progress">
+              <div class="kanban-stage-header">
+                <h4><span>🔧</span> In Progress (<span id="count-col-inprogress">0</span>)</h4>
+                <span class="status-pill in-progress">Remediating</span>
+              </div>
+              <div class="kanban-card-deck" id="kanban-list-inprogress"></div>
+            </div>
+
+            <!-- Column 4: Resolved -->
+            <div class="kanban-stage-column col-resolved">
+              <div class="kanban-stage-header">
+                <h4><span>✅</span> Resolved (<span id="count-col-resolved">0</span>)</h4>
+                <span class="status-pill resolved">Verified</span>
+              </div>
+              <div class="kanban-card-deck" id="kanban-list-resolved"></div>
+            </div>
+
+          </div>
+
+          <!-- Table View for Corrective Actions (Hidden by default) -->
+          <div id="ca-table-container" class="table-wrapper-responsive" style="display: none; margin-top: 18px;">
+            <table class="enterprise-table">
+              <thead>
+                <tr>
+                  <th>Action ID & Task</th>
+                  <th>Hazard Ref</th>
+                  <th>Zone / Location</th>
+                  <th>Severity</th>
+                  <th>Assigned Contractor</th>
+                  <th>Target SLA</th>
+                  <th>Current Status</th>
+                  <th>Audit Trail</th>
+                </tr>
+              </thead>
+              <tbody id="ca-table-body">
+                <!-- Rendered via JS -->
+              </tbody>
+            </table>
+          </div>
+
+        </section>
+
+        <!-- ================= 6. VIEW: SAFETY ANALYTICS (NEW) ================= -->
+        <section id="view-analytics" class="view-section">
+          
+          <div class="page-header-row">
+            <div class="page-title-group">
+              <h2>Site Safety Analytics & Contractor Scorecards</h2>
+              <p>Executive compliance reporting, TRIR / LTIFR safety ratios, and contractor benchmarks</p>
+            </div>
+            <div class="page-action-group">
+              <button class="btn-secondary" id="btn-export-analytics-report">📥 Download Executive Summary</button>
+            </div>
+          </div>
+
+          <!-- Safety Indices Row -->
+          <div class="kpi-row-grid">
+            
+            <div class="stat-card">
+              <div class="stat-card-header">
+                <span class="stat-card-title">LTIFR (Lost Time Rate)</span>
+                <div class="stat-icon-box green">📉</div>
+              </div>
+              <div class="stat-number-row">
+                <span class="stat-value">0.00</span>
+                <span class="stat-trend-chip success">Industry: 1.8</span>
+              </div>
+              <div class="stat-subtext">Zero lost-time injuries per 1M hours worked</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-card-header">
+                <span class="stat-card-title">TRIR (Recordables Rate)</span>
+                <div class="stat-icon-box blue">📊</div>
+              </div>
+              <div class="stat-number-row">
+                <span class="stat-value">0.42</span>
+                <span class="stat-trend-chip success">Top Decile</span>
+              </div>
+              <div class="stat-subtext">Well below industry benchmark threshold (2.5)</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-card-header">
+                <span class="stat-card-title">SLA Compliance Velocity</span>
+                <div class="stat-icon-box blue">⚡</div>
+              </div>
+              <div class="stat-number-row">
+                <span class="stat-value">93.8%</span>
+                <span class="stat-trend-chip success">+4.2%</span>
+              </div>
+              <div class="stat-subtext">Actions remediated within OSHA SLA target</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-card-header">
+                <span class="stat-card-title">Audit First-Time Pass Rate</span>
+                <div class="stat-icon-box orange">🎯</div>
+              </div>
+              <div class="stat-number-row">
+                <span class="stat-value">91.4%</span>
+                <span class="stat-trend-chip warning">-1.2%</span>
+              </div>
+              <div class="stat-subtext">64 inspections conducted this month</div>
+            </div>
+
+          </div>
+
+          <!-- Subcontractor Safety Performance Table -->
+          <div class="chart-panel-card" style="margin-bottom: 24px;">
+            <div class="panel-title-bar">
+              <h3>
+                <span>👷</span>
+                <span>Subcontractor Safety Compliance Scorecards</span>
+              </h3>
+              <span style="font-size: 11px; color: var(--text-muted);">Apex Tower Site Trades</span>
+            </div>
+
+            <div class="table-wrapper-responsive">
+              <table class="enterprise-table">
+                <thead>
+                  <tr>
+                    <th>Subcontractor Trade</th>
+                    <th>Safety Compliance Score</th>
+                    <th>Active Open Hazards</th>
+                    <th>Avg Resolution SLA</th>
+                    <th>Safety Grade</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="analytics-subcontractor-table-body">
+                  <!-- Rendered via JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Root Cause Distribution Analysis -->
+          <div class="dashboard-charts-grid">
+            <div class="chart-panel-card">
+              <div class="panel-title-bar">
+                <h3>
+                  <span>🔍</span>
+                  <span>Root Cause Category Breakdown</span>
+                </h3>
+              </div>
+              <div id="analytics-root-cause-bars" style="display: flex; flex-direction: column; gap: 14px; padding-top: 10px;">
+                <!-- Rendered via JS -->
+              </div>
+            </div>
+
+            <div class="chart-panel-card">
+              <div class="panel-title-bar">
+                <h3>
+                  <span>🗺️</span>
+                  <span>Zone Safety Index (out of 100)</span>
+                </h3>
+              </div>
+              <div id="analytics-zone-scores-bars" style="display: flex; flex-direction: column; gap: 14px; padding-top: 10px;">
+                <!-- Rendered via JS -->
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- ================= 7. VIEW: AI COPILOT INSIGHTS (NEW) ================= -->
+        <section id="view-ai-insights" class="view-section">
+          
+          <div class="page-header-row">
+            <div class="page-title-group">
+              <h2>SiteGuard AI Safety Copilot</h2>
+              <p>Simulated predictive hazard analytics, leading indicator clustering, and automated stand-down recommendations</p>
+            </div>
+            <div class="page-action-group">
+              <button class="btn-ai-action" id="btn-run-simulated-forecast">
+                <span>⚡ Re-run Predictive Risk Model</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Notice regarding simulated predictive intelligence -->
+          <div style="background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.3); border-radius: var(--radius-md); padding: 12px 18px; margin-bottom: 20px; font-size: 12px; color: var(--text-secondary); display: flex; align-items: center; justify-content: space-between;">
+            <div>
+              <strong style="color: var(--ai-purple-light);">Simulated AI Predictive Engine:</strong> Recommendations are calculated from leading indicators, subcontractor SLA turnaround velocity, and local weather limits. (Mock Data Demonstration).
+            </div>
+            <span style="font-family: var(--font-mono); font-size: 11px; color: var(--brand-cyan);">Engine Status: ONLINE</span>
+          </div>
+
+          <!-- AI Filter Tabs -->
+          <div class="filter-action-bar" style="margin-bottom: 20px;">
+            <div class="filter-selectors-group">
+              <button class="btn-secondary active" id="btn-ai-filter-all">All Insights (4)</button>
+              <button class="btn-secondary" id="btn-ai-filter-crit">Critical Alerts (1)</button>
+              <button class="btn-secondary" id="btn-ai-filter-warn">SLA Warnings (2)</button>
+              <button class="btn-secondary" id="btn-ai-filter-adv">Advisories (1)</button>
+            </div>
+            <div style="font-size: 12px; color: var(--text-muted);">
+              Last Model Run: <strong style="color: var(--text-primary);">Today, 08:15 AM</strong>
+            </div>
+          </div>
+
+          <!-- AI Insights Cards Grid -->
+          <div class="ai-insights-grid" id="ai-insights-cards-container">
+            <!-- Rendered via JS -->
+          </div>
+
+        </section>
+
+        <!-- ================= 8. VIEW: SETTINGS ================= -->
+        <section id="view-settings" class="view-section">
+          
+          <div class="page-header-row">
+            <div class="page-title-group">
+              <h2>Site & Safety Governance Settings</h2>
+              <p>Project site parameters, OSHA SLA escalation thresholds, and predictive model sensitivity</p>
+            </div>
+            <div class="page-action-group">
+              <button class="btn-report-primary" id="btn-save-settings">Save Changes</button>
+            </div>
+          </div>
+
+          <div class="settings-grid">
+            
+            <!-- Site Identity Settings -->
+            <div class="settings-panel">
+              <h3 style="font-size: 15px; font-weight: 800; border-bottom: 1px solid var(--border-subtle); padding-bottom: 10px;">
+                🏗️ Project Information
+              </h3>
+              
+              <div class="form-group">
+                <label class="form-label" for="setting-proj-name">Project Name</label>
+                <input type="text" id="setting-proj-name" class="form-input-control" value="Project Apex Tower">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="setting-address">Site Location Address</label>
+                <input type="text" id="setting-address" class="form-input-control" value="425 Broadway Blvd, New York, NY">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="setting-contractor">General Contractor</label>
+                <input type="text" id="setting-contractor" class="form-input-control" value="Apex Construction Enterprises">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="setting-officer">Lead Safety Director</label>
+                <input type="text" id="setting-officer" class="form-input-control" value="Sarah Jenkins, CSP (Safety Director)">
+              </div>
+            </div>
+
+            <!-- SLA Thresholds -->
+            <div class="settings-panel">
+              <h3 style="font-size: 15px; font-weight: 800; border-bottom: 1px solid var(--border-subtle); padding-bottom: 10px;">
+                ⏱️ OSHA Remediation SLA Targets
+              </h3>
+
+              <div class="form-group">
+                <label class="form-label">Critical Severity SLA (Stop Work)</label>
+                <select id="setting-sla-critical" class="form-select-control">
+                  <option value="2" selected>2 Hours (Mandatory Rapid Containment)</option>
+                  <option value="4">4 Hours</option>
+                  <option value="1">1 Hour (Immediate Stand-down)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">High Severity SLA</label>
+                <select id="setting-sla-high" class="form-select-control">
+                  <option value="4" selected>4 Hours (Same Shift)</option>
+                  <option value="8">8 Hours</option>
+                  <option value="12">12 Hours</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Tower Crane Max Wind Speed Limit (mph)</label>
+                <input type="number" id="setting-wind-limit" class="form-input-control" value="32">
+                <span style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">Automatic crane hoisting restriction triggers when sustained winds exceed this value.</span>
+              </div>
+            </div>
+
+            <!-- AI Copilot Governance -->
+            <div class="settings-panel">
+              <h3 style="font-size: 15px; font-weight: 800; border-bottom: 1px solid var(--border-subtle); padding-bottom: 10px;">
+                ✨ Simulated AI Copilot Settings
+              </h3>
+
+              <div class="setting-toggle-row">
+                <div>
+                  <div style="font-weight: 700;">Predictive Anomaly Detection</div>
+                  <div style="font-size: 11px; color: var(--text-muted);">Cluster repetitive hazard patterns across site sectors</div>
+                </div>
+                <input type="checkbox" id="setting-ai-enabled" checked style="transform: scale(1.3); cursor: pointer;">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Model Sensitivity Threshold</label>
+                <select id="setting-ai-sensitivity" class="form-select-control">
+                  <option value="High" selected>High (Proactive Stand-down Advisories)</option>
+                  <option value="Medium">Medium (Balanced)</option>
+                  <option value="Low">Low (Only Critical Cluster Anomalies)</option>
+                </select>
+              </div>
+
+              <div class="setting-toggle-row">
+                <div>
+                  <div style="font-weight: 700;">Tactile Safety Sound Chimes</div>
+                  <div style="font-size: 11px; color: var(--text-muted);">Web Audio alerts for critical stops & checks</div>
+                </div>
+                <input type="checkbox" id="setting-sound-enabled" checked style="transform: scale(1.3); cursor: pointer;">
+              </div>
+
+              <div style="margin-top: 10px; padding: 14px; background: rgba(239, 68, 68, 0.08); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: var(--radius-md);">
+                <div style="font-weight: 700; color: var(--danger-red); margin-bottom: 4px;">Data Governance</div>
+                <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 10px;">Reset or clear demo database back to project default.</p>
+                <button type="button" class="btn-secondary" style="border-color: var(--danger-red); color: #f87171;" id="btn-settings-reset-demo">
+                  Reset Sample Database
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+      </main>
+
+    </div>
+
+  </div>
+
+  <!-- ================= MODALS & SLIDE-OUT DRAWERS ================= -->
+
+  <!-- Modal 1: Report Hazard Form (Mobile & Desktop) -->
+  <div id="modal-report-hazard" class="modal-backdrop-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-report-title">
+    <div class="modal-content-card extra-wide">
+      <div class="modal-header-bar">
+        <h3 id="modal-report-title">
+          <span>⚠️</span>
+          <span>Report Safety Hazard</span>
+        </h3>
+        <button class="btn-sidebar-collapse" id="btn-close-report" aria-label="Close modal">&times;</button>
+      </div>
+
+      <form id="form-report-hazard">
+        <div class="modal-body-content">
+          
+          <!-- 1-Tap Field Presets for Instant Reporting -->
+          <div class="form-group">
+            <label class="form-label" style="font-size: 11.5px; color: var(--brand-cyan); font-weight: 800;">1-TAP FIELD PRESETS (FAST MOBILE LOGGING):</label>
+            <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px;">
+              <button type="button" class="btn-secondary" style="font-size: 11.5px; padding: 4px 10px; min-height: 30px;" data-preset="guardrail">🚧 Missing Guardrail</button>
+              <button type="button" class="btn-secondary" style="font-size: 11.5px; padding: 4px 10px; min-height: 30px;" data-preset="cord">⚡ Frayed Cord in Puddle</button>
+              <button type="button" class="btn-secondary" style="font-size: 11.5px; padding: 4px 10px; min-height: 30px;" data-preset="harness">🪢 No Harness at Height</button>
+              <button type="button" class="btn-secondary" style="font-size: 11.5px; padding: 4px 10px; min-height: 30px;" data-preset="trench">⛏️ Trench Missing Ladder</button>
+              <button type="button" class="btn-secondary" style="font-size: 11.5px; padding: 4px 10px; min-height: 30px;" data-preset="fuel">🛢️ Fuel Storage Spill</button>
+              <button type="button" class="btn-secondary" style="font-size: 11.5px; padding: 4px 10px; min-height: 30px;" data-preset="rebar">🔩 Unguarded Rebar</button>
+            </div>
+          </div>
+
+          <!-- Title & Category -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+            <div class="form-group">
+              <label class="form-label" for="report-title">Hazard Title *</label>
+              <input type="text" id="report-title" class="form-input-control" placeholder="e.g. Unsecured Scaffolding Planks" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="report-category">Safety Category *</label>
+              <select id="report-category" class="form-select-control" required>
+                <option value="Fall Protection">Fall Protection (Subpart M)</option>
+                <option value="Scaffolding">Scaffolding (Subpart L)</option>
+                <option value="Electrical">Electrical Safety (Subpart K)</option>
+                <option value="Trenching">Trenching & Excavation (Subpart P)</option>
+                <option value="Heavy Equipment">Heavy Equipment & Rigging</option>
+                <option value="Chemical/Hazmat">Chemical / Flammable / Hazmat</option>
+                <option value="PPE">PPE Non-Compliance</option>
+                <option value="Housekeeping">Housekeeping & Egress</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Severity Selector -->
+          <div class="form-group">
+            <label class="form-label">Severity Level & Mandatory Remediation SLA *</label>
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;" id="severity-radio-grid">
+              
+              <label style="border: 2px solid var(--border-medium); border-radius: var(--radius-md); padding: 12px 8px; text-align: center; cursor: pointer; background: var(--bg-surface);" id="sev-label-critical">
+                <input type="radio" name="report-severity" value="Critical" style="display: none;" required>
+                <div style="font-weight: 800; font-size: 12px; color: var(--danger-red);">CRITICAL</div>
+                <div style="font-size: 10px; color: var(--text-muted); margin-top: 2px;">2h SLA (Stop Work)</div>
+              </label>
+
+              <label style="border: 2px solid var(--safety-orange); border-radius: var(--radius-md); padding: 12px 8px; text-align: center; cursor: pointer; background: var(--bg-surface);" id="sev-label-high">
+                <input type="radio" name="report-severity" value="High" checked style="display: none;">
+                <div style="font-weight: 800; font-size: 12px; color: var(--safety-orange);">HIGH</div>
+                <div style="font-size: 10px; color: var(--text-muted); margin-top: 2px;">4h SLA (Urgent)</div>
+              </label>
+
+              <label style="border: 2px solid var(--border-medium); border-radius: var(--radius-md); padding: 12px 8px; text-align: center; cursor: pointer; background: var(--bg-surface);" id="sev-label-medium">
+                <input type="radio" name="report-severity" value="Medium" style="display: none;">
+                <div style="font-weight: 800; font-size: 12px; color: var(--safety-yellow);">MEDIUM</div>
+                <div style="font-size: 10px; color: var(--text-muted); margin-top: 2px;">24h SLA</div>
+              </label>
+
+              <label style="border: 2px solid var(--border-medium); border-radius: var(--radius-md); padding: 12px 8px; text-align: center; cursor: pointer; background: var(--bg-surface);" id="sev-label-low">
+                <input type="radio" name="report-severity" value="Low" style="display: none;">
+                <div style="font-weight: 800; font-size: 12px; color: var(--brand-cyan);">LOW</div>
+                <div style="font-size: 10px; color: var(--text-muted); margin-top: 2px;">Routine</div>
+              </label>
+
+            </div>
+          </div>
+
+          <!-- Location & Zone -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+            <div class="form-group">
+              <label class="form-label" for="report-zone">Site Zone *</label>
+              <select id="report-zone" class="form-select-control" required>
+                <option value="ZONE-A">Zone A - Excavation & Substructure</option>
+                <option value="ZONE-B" selected>Zone B - Tower Crane & Steel Deck</option>
+                <option value="ZONE-C">Zone C - Levels 1-4 Interior & MEP</option>
+                <option value="ZONE-D">Zone D - Facade Scaffolding</option>
+                <option value="ZONE-E">Zone E - Laydown Yard & Loading Bay</option>
+                <option value="ZONE-F">Zone F - Site Gate & Offices</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="report-location">Specific Gridline / Floor *</label>
+              <input type="text" id="report-location" class="form-input-control" placeholder="e.g. 8th Floor Deck, Column C-4" required>
+            </div>
+          </div>
+
+          <!-- Description & Voice Dictation -->
+          <div class="form-group">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px;">
+              <label class="form-label" for="report-desc" style="margin: 0;">Hazard Observation Description *</label>
+              <button type="button" id="btn-voice-memo" class="btn-secondary" style="font-size: 11px; padding: 2px 8px; min-height: 26px;">
+                🎙️ Simulate Voice Dictation
+              </button>
+            </div>
+            <textarea id="report-desc" class="form-textarea-control" rows="3" placeholder="Describe the hazard, unsafe conditions, or immediate risks observed..." required></textarea>
+          </div>
+
+          <!-- Responsible Subcontractor -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+            <div class="form-group">
+              <label class="form-label" for="report-subcontractor">Responsible Subcontractor</label>
+              <select id="report-subcontractor" class="form-select-control">
+                <option value="Apex Structural Steel|Marcus Vance">Apex Structural Steel (Marcus Vance)</option>
+                <option value="VoltLine Electrical Ltd.|Robert Diaz">VoltLine Electrical (Robert Diaz)</option>
+                <option value="Apex Scaffolding Services|David Chen">Apex Scaffolding (David Chen)</option>
+                <option value="DeepEarth Trenching Co.|Carlos Mendez">DeepEarth Trenching (Carlos Mendez)</option>
+                <option value="Titan Concrete Reinforcing|Stanislaw Wojcik">Titan Concrete (Stanislaw Wojcik)</option>
+                <option value="Premier Drywall & Framing|Elena Rostova">Premier Drywall (Elena Rostova)</option>
+                <option value="Titan Site Logistics|Frank Kowalski">Titan Site Logistics (Frank Kowalski)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="report-inspector">Reporting Safety Officer</label>
+              <input type="text" id="report-inspector" class="form-input-control" value="Marcus Vance (Chief Safety Officer)">
+            </div>
+          </div>
+
+          <!-- Photo Upload & Camera Evidence -->
+          <div class="form-group">
+            <label class="form-label">Photo Evidence (Attach File or Select Sample)</label>
+            <div style="border: 2px dashed var(--border-medium); border-radius: var(--radius-md); padding: 16px; text-align: center; background: var(--bg-deep); display: flex; flex-direction: column; align-items: center; gap: 10px;">
+              
+              <div id="report-photo-preview" style="width: 100%; max-height: 180px; border-radius: var(--radius-sm); overflow: hidden; display: none; position: relative;">
+                <img id="report-preview-img" src="" alt="Hazard preview" style="width: 100%; height: 180px; object-fit: cover;">
+                <button type="button" id="btn-remove-preview" style="position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.7); color: #fff; border-radius: 50%; width: 28px; height: 28px; font-size: 16px;">&times;</button>
+              </div>
+
+              <input type="file" id="report-file-input" accept="image/*" capture="environment" style="display: none;">
+              <button type="button" class="btn-secondary" id="btn-trigger-camera">📷 Upload / Take Photo</button>
+              
+              <span style="font-size: 11px; color: var(--text-muted);">or select from verified site photo presets:</span>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px; justify-content: center;" id="photo-preset-chips">
+                <!-- Rendered by JS -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="modal-footer-bar">
+          <button type="button" class="btn-secondary" id="btn-cancel-report">Cancel</button>
+          <button type="submit" class="btn-report-primary" id="btn-submit-report">
+            <span>🛡️ Submit Hazard & Dispatch Action</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal 2: Hazard Details & Lightbox Drawer -->
+  <div id="modal-hazard-detail" class="modal-backdrop-overlay" role="dialog" aria-modal="true">
+    <div class="modal-content-card extra-wide">
+      <div class="modal-header-bar">
+        <h3>
+          <span>⚠️</span>
+          <span id="hmodal-id">Hazard Inspection Details</span>
+        </h3>
+        <button class="btn-sidebar-collapse" id="btn-close-hazard-detail">&times;</button>
+      </div>
+      <div class="modal-body-content" id="hazard-detail-body">
+        <!-- Rendered via JS -->
+      </div>
+      <div class="modal-footer-bar" id="hazard-detail-footer">
+        <!-- Action buttons rendered via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Corrective Action Timeline & Resolution Modal -->
+  <div id="modal-action-detail" class="modal-backdrop-overlay" role="dialog" aria-modal="true">
+    <div class="modal-content-card extra-wide">
+      <div class="modal-header-bar">
+        <h3>
+          <span>🔄</span>
+          <span id="camodal-title">Remediation Action Audit Trail</span>
+        </h3>
+        <button class="btn-sidebar-collapse" id="btn-close-action-detail">&times;</button>
+      </div>
+      <div class="modal-body-content" id="action-detail-body">
+        <!-- Rendered via JS -->
+      </div>
+      <div class="modal-footer-bar" id="action-detail-footer">
+        <!-- Action buttons rendered via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Daily Safety Digest / Toolbox Talk Briefing -->
+  <div id="modal-safety-digest" class="modal-backdrop-overlay" role="dialog" aria-modal="true">
+    <div class="modal-content-card extra-wide">
+      <div class="modal-header-bar">
+        <h3>
+          <span>📋</span>
+          <span>Daily Safety Digest & Toolbox Talk (OSHA Certified)</span>
+        </h3>
+        <button class="btn-sidebar-collapse" id="btn-close-digest">&times;</button>
+      </div>
+      <div class="modal-body-content" id="digest-print-area">
+        <!-- Printable Safety Meeting Sheet -->
+      </div>
+      <div class="modal-footer-bar">
+        <button type="button" class="btn-secondary" id="btn-print-digest">🖨️ Print / Save PDF</button>
+        <button type="button" class="btn-secondary" id="btn-dismiss-digest">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Stack Container -->
+  <div class="toast-stack-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
